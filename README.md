@@ -1,7 +1,7 @@
 # mailu-scaleway
 Deploying your email server on Scaleway in a few minutes! **Note:** this script is cloud agnostic.
 
-You can disable IPv6 as it is not being used here (see Mailu FAQ
+You should disable IPv6 as it is not being used here (see Mailu FAQ
 https://mailu.io/master/faq.html#how-to-make-ipv6-work)
 
 # Prerequisites
