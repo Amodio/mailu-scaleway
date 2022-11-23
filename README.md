@@ -30,6 +30,8 @@ To restore a backup on a fresh server, place your archive in `/root` before runn
 - `CAA` DNS entry with value `letsencrypt.org` (flag: 0 / non-critical)
 - `A`   DNS entry making `mail.EXAMPLE.COM` point to your server instance's IPv4
 
+You should also set your reverse DNS on the IPv4.
+
 For SPF:
 - `TXT` DNS entry on @ (= `EXAMPLE.COM`) with value `v=spf1 ip4:IPV4_OF_YOUR_INSTANCE -all` (replace the IP)
 
