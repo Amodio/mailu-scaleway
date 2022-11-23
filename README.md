@@ -30,10 +30,14 @@ To restore a backup on a fresh server, place your archive in `/root` before runn
 - `CAA` DNS entry with value `letsencrypt.org` (flag: 0 / non-critical)
 - `A`   DNS entry making `mail.EXAMPLE.COM` point to your server instance's IPv4
 
-For SPF&DKIM (you will have to run the script and follow the instructions to generate keys):
+For SPF:
 - `TXT` DNS entry on @ (= `EXAMPLE.COM`) with value `v=spf1 ip4:IPV4_OF_YOUR_INSTANCE -all` (replace the IP)
+
+For DMARC:
 - `TXT` DNS entry on the subdomain *_dmarc* with value `v=DMARC1; p=reject; rua=mailto:admin@EXAMPLE.COM; ruf=mailto:admin@EXAMPLE.COM; adkim=s; aspf=s` (replace the domain name)
-- `TXT` DNS entry on the subdomain *dkim._domainkey* with value `v=DKIM1; k=rsa; p=[...]` (again, generate keys from the web interface after running `main.sh`).
+
+For DKIM you will have to run the script and follow the instructions to generate keys (in the web interface).
+- `TXT` DNS entry on the subdomain *dkim._domainkey* with value `v=DKIM1; k=rsa; p=[...]`.
 
 # Configure email client(s)
 ```
