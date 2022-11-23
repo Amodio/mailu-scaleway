@@ -21,9 +21,9 @@ This script should execute in ~5 minutes and will display your credentials once.
 It will deploy an email server (SPF/DKIM & DMARC) from Mailu docker images.
 
 
-It will also create a ~/save.sh script to backup your docker volumes.
+It will also create a `~/save.sh` script to backup your docker volumes.
 
-To restore a backup on a fresh server, place your archive in /root before running this script.
+To restore a backup on a fresh server, place your archive in `/root` before running this script.
 
 # Set/create the DNS records
 - `MX`  DNS entry pointing to `mail.EXAMPLE.COM`
