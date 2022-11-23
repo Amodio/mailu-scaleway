@@ -36,7 +36,7 @@ For SPF:
 For DMARC:
 - `TXT` DNS entry on the subdomain *_dmarc* with value `v=DMARC1; p=reject; rua=mailto:admin@EXAMPLE.COM; ruf=mailto:admin@EXAMPLE.COM; adkim=s; aspf=s` (replace the domain name)
 
-For DKIM you will have to run the script and follow the instructions to generate keys (in the web interface).
+For DKIM you will have to run the script and follow its instructions to generate keys (in the web interface).
 - `TXT` DNS entry on the subdomain *dkim._domainkey* with value `v=DKIM1; k=rsa; p=[...]`.
 
 # Configure email client(s)
