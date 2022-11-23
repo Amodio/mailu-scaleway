@@ -6,8 +6,8 @@ https://mailu.io/master/faq.html#how-to-make-ipv6-work)
 
 # Prerequisites
 - Rent a Scaleway debian instance (Stardust at ~3 € or DEV1-S at ~9 € per month).
-- Own a domain name pointing to your instance (see [Set DNS records](README.md#set-dns-records) section below).
 - Make sure its IPv4 is not blacklisted: https://mxtoolbox.com/blacklists.aspx
+- Own a domain name pointing to your instance (see [Set DNS records](README.md#set-dns-records) section below).
 
 # Installation
 ```
