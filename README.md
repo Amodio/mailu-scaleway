@@ -41,7 +41,7 @@ For DMARC:
 For DKIM you will have to run the script and follow its instructions to generate keys (in the web interface).
 - `TXT` DNS entry on the subdomain *dkim._domainkey* with value `v=DKIM1; k=rsa; p=[...]`.
 
-# Configure email client(s)
+# Configure the email client(s)
 ```
 IMAP: mail.EXAMPLE.COM / port 993 (TLS)
 SMTP: mail.EXAMPLE.COM / port 465 (TLS)
