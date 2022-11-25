@@ -7,7 +7,7 @@ https://mailu.io/master/faq.html#how-to-make-ipv6-work)
 # Prerequisites
 - Rent a Scaleway debian instance (Stardust at ~3 € or DEV1-S at ~9 € per month).
 - Make sure its IPv4 is not blacklisted: https://mxtoolbox.com/blacklists.aspx
-- Own a domain name pointing to your instance (see [Set DNS records](README.md#set-dns-records) section below).
+- Own a domain name pointing to your instance (see [Set DNS records](README.md#setcreate-the-dns-records) section below).
 
 # Installation
 ```
@@ -30,7 +30,7 @@ To restore a backup on a fresh server, place your archive in `/root` before runn
 - `CAA` DNS entry with value `letsencrypt.org` (flag: 0 / non-critical)
 - `A`   DNS entry making `mail.EXAMPLE.COM` point to your server instance's IPv4
 
-You should also set your reverse DNS on the IPv4.
+You should also set your reverse DNS (`mail.EXAMPLE.COM`) on the IPv4.
 
 For SPF:
 - `TXT` DNS entry on @ (= `EXAMPLE.COM`) with value `v=spf1 ip4:IPV4_OF_YOUR_INSTANCE -all` (replace the IP)
